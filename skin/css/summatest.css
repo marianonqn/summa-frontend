@@ -1,0 +1,155 @@
+.slide {
+  background-color: rgb(229, 229, 229);
+}
+
+.bx-wrapper img {
+    /*max-width: 100%;
+    display: block;
+    width: 100%;*/
+    display: block;
+    margin: 0 auto;
+}
+
+/* Float five columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .box-list {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .box-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    background-color: #f1f1f1;
+    min-height: 215px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-style: italic;
+    font-family: georgia, serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .card p {
+    margin-top: 5px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* menu */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+
+  .main-header {
+    margin: auto;
+    width: 75%;
+    min-height: 90px;
+    padding: 1em 2em;
+  }
+    .main-header:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  .logo {
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin-top: 5px;
+  }
+    .logo::before {
+      color: #fff;
+      content: "\e001";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2.5em;
+      font-family: "icomoon";
+      -webkit-font-smoothing: antialiased;
+    }
+  
+  /* Nav Styles -------------------- */
+  
+  .main-nav,
+  .drop-nav {
+    background: #2c3e50;
+  }
+  .main-nav {
+    float: right;
+    border-radius: 4px;
+    margin-top: 8px;
+    border: solid 1px #1e2a36;
+  }
+    .main-nav > li {
+      float: left;
+      border-left: solid 1px #1e2a36;
+    }
+    .main-nav li:first-child {
+      border-left: none;
+    }
+    .main-nav a {
+      color: #fff;
+      display: block;
+      padding: 10px 30px;
+      text-decoration: none;
+      display: block;
+      transition: .3s background-color;
+    }
+
+    /* Sub Menus */
+  .main-nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+    z-index: 1000000;
+    background: #2c3e50;
+    border:solid 1px #1e2a36;
+    border-width:1px 1px 1px 1px;
+  }
+
+  .main-nav li:hover ul {
+    display: block;
+  }
+
+  .main-nav li ul li {
+    display: block;
+    border-bottom:solid 1px #1e2a36;
+    padding:0 0 0 10px;
+  }
+
+  .main-nav li ul li:last-child {
+    border-bottom:0px;
+  }
+
+  .main-nav li ul a {
+    border-width:0px;
+    color:#909090;
+    background-color:transparent;
+  }
+  
